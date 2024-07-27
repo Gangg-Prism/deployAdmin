@@ -3,7 +3,7 @@
 import type { NextRequest } from "next/server";
 import { signIn, useSession } from "next-auth/react";
 import { redirect } from "next/navigation";
-import '../css/styles.css';
+// import '../css/styles.css';
 
 export default function Landing() {
   const { data: session } = useSession();
