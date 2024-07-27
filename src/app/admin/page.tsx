@@ -17,7 +17,7 @@ export default function Admin() {
         <p className="flex justify-center pt-5 text-l ">"Bridging the Gap Between Church and Community"</p>
       <div className="flex justify-end">
         <div className="login-container">
-          <p>Loggedin User : {session.user.name}</p>
+          <p>Loggedin User : {session.user === null? 'User Not Found' : session.user.name}</p>
           <button className='btn' onClick={() => signOut()}>Signout</button>
         </div>
       </div>
