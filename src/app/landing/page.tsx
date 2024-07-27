@@ -25,7 +25,6 @@ export default function Landing() {
         <div className='section'>
           <div className="flex p-10 justify-center ">Building Websites</div>
           <div className="flex flex-row justify-center">
-            {/* <div className="flex flex-row justify-center p-5"> */}
               <div className="content">
               At Beacon Bridge, we create websites tailored specifically for churches. 
               We start with a conversation to understand your local community, outreach goals, 
@@ -34,9 +33,6 @@ export default function Landing() {
               you need a straightforward solution or a complex, bespoke website, we are here to ensure 
               your site is a powerful tool for your ministry.
               </div>
-            {/* </div>
-            <div className="flex flex-row justify-center p-5">yes</div>
-            <div className="flex flex-row justify-center p-5">yes</div> */}
           </div>
         </div>
         <div className='section'>
