@@ -13,12 +13,18 @@ export default function Admin() {
 
   return (
     <div>
-      <p className="flex justify-center pt-20 text-7xl font-bold">Beacon Bridge</p>
-      <p className="flex justify-center pt-5 text-l">"Bridging the Gap Between Church and Community"</p>
+        <p className="flex justify-center pt-20 text-7xl font-bold">Beacon Bridge</p>
+        <p className="flex justify-center pt-5 text-l ">"Bridging the Gap Between Church and Community"</p>
       <div className="flex justify-end">
-        <div className="login-container">
-              <p>{session.user.name}</p>
-              <p className="text-xs">{session.user.email}</p>
+      <div className="login-container">
+          {session.user ? (
+            <>
+              <p>Name: {session.user.name}</p>
+              <p className="text-xs">Email: {session.user.email}</p>
+            </>
+          ) : (
+            <p>Not logged in</p>
+          )}
           <button className='btn' onClick={() => signOut()}>Sign out</button>
         </div>
       </div>

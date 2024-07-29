@@ -1,0 +1,49 @@
+.content {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 100;
+    font-size: large;
+    text-align: left;
+}
+
+.main {
+    display: flex;
+    flex-direction: column
+}
+
+.section {
+    font-weight: 700;
+    font-size: xx-large;
+    background: linear-gradient(to bottom, #FFFFFF, #d2f1fd);
+    padding-top: 100px;
+    padding-bottom: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 1em;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.btn {
+    width: 150px;
+    height: 25px;
+    background-color: #BFBFBF;
+    color: #FFFFFF;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    outline-color: #000000;
+    outline-width: 20px;
+}
+
+.footer {
+    display: flex;
+    height: 100px;
+}
