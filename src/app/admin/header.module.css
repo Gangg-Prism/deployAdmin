@@ -1,0 +1,125 @@
+.header {
+  width: 100%; /* Ensure the header spans the entire width */
+  background-color: #3498db;
+  color: white;
+  padding: 1rem;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: center; /* Center the navigation items */
+  align-items: center;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 1rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: center; /* Center the navigation items */
+  gap: 2.5rem;
+}
+
+.navItem {
+  color: white;
+  text-decoration: none;
+  transition: color 0.25s;
+}
+
+.navItem:hover {
+  color: hsl(0, 0%, 0%);
+  text-decoration: none;
+}
+
+.message {
+  margin-top: 1rem;
+}
+
+
+.error {
+  color: red;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.loginForm input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.loginForm button {
+  padding: 8px;
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.loginForm button:hover {
+  background-color: #005bb5;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.hamburgerLine {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: white;
+  transition: all 0.3s linear;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav {
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    background-color: #3498db;
+    align-items: center;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in;
+  }
+
+  .nav.open {
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .navItem {
+    margin: 0.5rem 0;
+  }
+}
