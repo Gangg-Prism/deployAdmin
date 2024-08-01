@@ -74,7 +74,7 @@ export default function Admin() {
         {session.user ? (
           <>
             <p>Name: {session.user.name}</p>
-            <p className="text-xs">Email: {session.user.email}</p>
+            <p className="text-xs">Email: {session.user.email}</p><br />
           </>
         ) : (
           <p>Not logged in</p>
