@@ -8,8 +8,4 @@ export const authOptions: NextAuthOptions = {
       clientSecret: process.env.GG_SECRET as string,
     }),
   ],
-<<<<<<< Updated upstream
 };
-=======
-};
->>>>>>> Stashed changes
